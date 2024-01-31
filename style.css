@@ -1,4 +1,144 @@
-h1{
-    color: darkblue;
-    filter: drop-shadow(5px 4px 3px rgb(0, 255, 119));
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/* navbar body start */
+#navbar {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(226, 226, 226);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar ul li {
+  margin: 0px 40px;
+  display: inline-block;
+}
+#navbar .imdb {
+  background-color: rgb(255, 170, 0);
+  padding: 1px 10px;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  border: 1.5px solid rgb(70, 70, 70);
+  border-radius: 6px;
+  filter: drop-shadow(10px 3px 3px orange);
+}
+
+#navbar .movies {
+  /* background-color: blueviolet; */
+  padding: 2px 15px;
+  margin-left: 2px;
+  border-radius: 20px;
+  border: 1px solid grey;
+}
+.movies:hover {
+  background-color: rebeccapurple;
+  color: aliceblue;
+}
+
+/* only search bar css */
+#inputSearch {
+  width: 410px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: none;
+}
+::placeholder {
+  color: black;
+}
+
+#inputSearch:focus {
+  outline-width: 0px;
+}
+.search {
+  border: 1px solid rgb(89, 89, 89);
+  border-radius: 20px;
+  width: 450px;
+  /* background-color: rgb(0, 102, 255); */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+  right: 110px;
+}
+.search .search-icon {
+  /* margin: 5px 5px; */
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  right: 18px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* header section of page */
+
+header {
+  background-color: blue;
+  width: 100vw;
+  height: 55vh;
+  border: 6px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* grid: repeat(3, 80px) / auto-flow; */
+}
+
+header .banner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.l-side,
+.r-side {
+  text-align: center;
+}
+
+.image {
+  width: 80vw;
+  height: 290px;
+  background-color: orange;
+  text-align: center;
+}
+
+
+/* main section */
+
+main{
+    width: 100vw;
+    background-color: green;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.movies-list{
+    width: 90%;
+    height: auto;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    /* display: grid; */
+    /* display: inline-block; */
+
+}
+.right-side{
+    width: 70%;
+    height: 180px;
+    background-color: white;
+}
+.left-side{
+    width: 30%;
+    height: 180px;
+    background-color: rgb(23, 231, 165);
 }
