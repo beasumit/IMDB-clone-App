@@ -8,7 +8,7 @@ const key = "4f3b1290";
 async function fetchMovieUrl(id) {
   //   const ids = "tt3896198";
   try {
-    const url = `http://www.omdbapi.com/?i=${id}&apikey=${key}`;
+    const url = `https://www.omdbapi.com/?i=${id}&apikey=${key}`;
     const res = await fetch(url);
     if (!res.ok) {
         throw new Error('Network response was not ok');
