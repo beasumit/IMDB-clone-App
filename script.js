@@ -81,8 +81,8 @@ async function addTofavorites(id) {
 //remove movies from website
 
 async function removeFromfavorites(id) {
-  console.log(id);
-  try {
+    try {
+      console.log(id);
     const keys = Object.keys(localStorage);
 
     keys.forEach(function (key) {
