@@ -27,10 +27,9 @@ async function singleMovie() {
     var id = urlQueryParams.get("id");
     const data = await fetchMovieUrl(id);
     console.log(data);
-  
 
-  // result will display here
-  var result = `
+    // result will display here
+    var result = `
     <div class="movie-poster">
         <img src=${data.Poster} alt="Movie Poster">
     </div>
@@ -63,9 +62,9 @@ async function singleMovie() {
         </p>
     </div> 
     `;
-  // attach the output
-  document.querySelector(".movie-container").innerHTML = result;
-} catch (error) {
+    // attach the output
+    document.querySelector(".movie-container").innerHTML = result;
+  } catch (error) {
     console.error("Error is singleMovie", error);
   }
 }
@@ -81,8 +80,8 @@ async function addTofavorites(id) {
 //remove movies from website
 
 async function removeFromfavorites(id) {
-    try {
-      console.log(id);
+  try {
+    console.log(id);
     const keys = Object.keys(localStorage);
 
     keys.forEach(function (key) {
