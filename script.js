@@ -27,9 +27,7 @@ async function singleMovie() {
     var id = urlQueryParams.get("id");
     const data = await fetchMovieUrl(id);
     console.log(data);
-  } catch (error) {
-    console.error("Error is singleMovie", error);
-  }
+  
 
   // result will display here
   var result = `
@@ -67,6 +65,9 @@ async function singleMovie() {
     `;
   // attach the output
   document.querySelector(".movie-container").innerHTML = result;
+} catch (error) {
+    console.error("Error is singleMovie", error);
+  }
 }
 
 // Adding favourite movies to list
