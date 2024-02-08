@@ -4,6 +4,10 @@ var displaySearchList = document.getElementsByClassName("fav-container");
 // api key
 const key = "4f3b1290";
 
+
+
+
+
 // fetch url
 async function fetchMovieUrl(id) {
   //   const ids = "tt3896198";
@@ -11,8 +15,8 @@ async function fetchMovieUrl(id) {
     const url = `https://www.omdbapi.com/?i=${id}&apikey=${key}`;
     const res = await fetch(url);
     if (!res.ok) {
-        throw new Error('Network response was not ok');
-      }
+      throw new Error("Network response was not ok");
+    }
     const data = await res.json();
     return data;
   } catch (error) {
@@ -21,6 +25,11 @@ async function fetchMovieUrl(id) {
   // Upon keypress - function findMovies is initiated
 }
 searchInput.addEventListener("input", findMovies);
+
+
+
+
+
 
 // To display details of movies
 async function singleMovie() {
@@ -72,6 +81,11 @@ async function singleMovie() {
   }
 }
 
+
+
+
+
+
 // Adding favourite movies to list
 async function addTofavorites(id) {
   console.log("fav-item", id);
@@ -79,6 +93,10 @@ async function addTofavorites(id) {
   localStorage.setItem(Math.random().toString(36).slice(2, 7), id); // math.random for the unique key and value pair
   alert("Movie Added successfull to favorite");
 }
+
+
+
+
 
 //remove movies from website
 
@@ -101,6 +119,10 @@ async function removeFromfavorites(id) {
     console.error("error in removeFromFavorite", error);
   }
 }
+
+
+
+
 
 //Displaying the movie list on the search page according to the user list
 async function displayMovieList(movies) {
@@ -140,6 +162,11 @@ async function displayMovieList(movies) {
     console.error("error is displayMovieList", error);
   }
 }
+
+
+
+
+
 //list of movies display as per user search
 async function findMovies() {
   try {
@@ -155,6 +182,9 @@ async function findMovies() {
     console.error("Error in findMovies", error);
   }
 }
+
+
+
 
 //Favorites movies is loaded here
 async function favoritesMovieLoader() {
