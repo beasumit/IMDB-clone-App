@@ -124,7 +124,7 @@ async function displayMovieList(movies) {
                 <p class="fav-movie-rating"><a href="movie.html?id=${id}">${movie.Year}</a></p>
               </div>
               <div>
-                <i class=""fa-solid fa-heart-circle-plus"" style="cursor:pointer;" onClick="addTofavorites('${id}')"></i>
+                <i class="fa-solid fa-heart-circle-plus" style="cursor:pointer;" onClick="addTofavorites('${id}')"></i>
               </div>
             </div>
           </div>
