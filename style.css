@@ -96,6 +96,8 @@ body {
     box-shadow: 1px 2px #a1a1a1;
 }
 
+
+
 .movie-poster {
     width: 50%;
 }
@@ -161,11 +163,50 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
+    flex-grow: 2;
     flex-wrap: wrap;
     width: 100%;
     padding: 10px;
     margin: 0px auto;
     filter: drop-shadow(1px 6px 4px rgb(135, 132, 132));
+}
+
+/* for screen responsive */
+@media screen and (max-width: 768px) {
+    .fav-container {
+        justify-content: center;
+        flex-direction: column; /* Center items horizontally */
+    }
+    .fav-container .fav-item {
+        width: 70%; /* Display two items per row */
+        margin-bottom: 20px;
+    }
+
+    .movie-container{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 2;
+        flex-wrap: wrap;
+    }
+}
+
+/* Media query for extra small screens */
+@media screen and (max-width: 480px) {
+    .fav-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+    .fav-container .fav-item {
+        width: 100%; /* Display one item per row */
+    
+    }
 }
 
 .fav-container i{
