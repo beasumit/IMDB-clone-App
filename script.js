@@ -42,7 +42,7 @@ async function singleMovie() {
                 <h2>${data.Title}</h2>
             </div>
             <div class="dh-rs">
-                <i class="fa-solid fa-bookmark" onClick=addTofavorites('${id}') style="cursor: pointer;"></i>
+                <i class="fa-solid fa-heart-circle-plus" onClick=addTofavorites('${id}') style="cursor: pointer;"></i>
             </div>
         </div>
         <span class="italics-text"><i>${data.Year} &#x2022; ${data.Country} &#x2022; Rating - <span
@@ -124,7 +124,7 @@ async function displayMovieList(movies) {
                 <p class="fav-movie-rating"><a href="movie.html?id=${id}">${movie.Year}</a></p>
               </div>
               <div>
-                <i class="fa-solid fa-bookmark" style="cursor:pointer;" onClick="addTofavorites('${id}')"></i>
+                <i class=""fa-solid fa-heart-circle-plus"" style="cursor:pointer;" onClick="addTofavorites('${id}')"></i>
               </div>
             </div>
           </div>
