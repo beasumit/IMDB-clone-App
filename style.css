@@ -21,6 +21,8 @@ nav{
 
 
 
+
+
 /* Main Container */
 .main {
     /* background-color: #ff0202; */
@@ -119,7 +121,7 @@ nav{
     justify-content: center ;
     align-items: center;
     gap: 1rem;
-    color: rgb(59, 57, 57);
+    color: #fff;
 }
 .fav-container {
     display: flex;
@@ -182,10 +184,10 @@ nav{
     color:red
 }
 .fav-container i span{
-    color: rgb(0, 0, 0);
+    color: rgb(73, 73, 73);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: capitalize;
-    font-weight: 300;
+    font-weight: 700;
     font-size: 1rem;
 }
 

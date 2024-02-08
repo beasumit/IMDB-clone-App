@@ -18,19 +18,19 @@
 <!-- navbar -->
     <nav class="  navbar navbar-expand-lg bg-body-tertiary bg-info  ">
         <div class="container-fluid  ">
-          <a class="navbar-brand text-white" href="./index.html">Movies Finder OMDB</a>
+          <a class="navbar-brand text-white " href="./index.html">Movies Finder OMDB</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="./favorite.html">Favourite</a>
+                <a class="nav-link active text-white fs-5" aria-current="page" href="./favorite.html">Favourite</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-                <input type="text" placeholder="Search movies" class="search-bar" id="Input">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <form class="d-flex justify-content-center m-1 px-5 " id="searchMe" role="search">
+                <input type="text" placeholder="Search movies" class="search-bar px-4 rounded-start border border-success p-2 mb-2 border-opacity-25 form-control border border-end-0" id="Input">
+                <button type="submit" class="rounded-end  border border-success p-2 mb-2 border-opacity-25"><i class="fa-solid fa-magnifying-glass text-body-tertiary border border-start-0"></i></button>
             </form>
           </div>
         </div>
@@ -41,7 +41,7 @@
     <div class="main">
         <div class="fav-container">
             <!-- Items displayed here -->
-            <i class="fa-solid fa-photo-film" id="movi"><span>movies result here</span></i>
+            <i class="fa-solid fa-photo-film fs-1" id="movi"><span class="fs-5">movies result here</span></i>
         </div>        
         <div class="start-exploring">
             
