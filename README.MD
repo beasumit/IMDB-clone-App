@@ -1,7 +1,7 @@
 ## IMDB Clone App
 
-Movies finder omdb . Api based webpage where you can search any movies with there details.
-this is also mobile resposive so user can open this webpage to any screen.
+Created This APP for Finding Movies Through omdb(API Intersection). This Api based webpage is where you can search any movies with there details.
+This is also Screen resposive so user can open this webpage to any screen.
 
 ## Code
 1. Html
